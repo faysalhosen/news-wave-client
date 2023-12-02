@@ -13,7 +13,7 @@ const ManageAllUsers = () => {
             .then(data => {
                 setUsers(data.data)
             })
-        }, [axiosPublic,users])
+        }, [axiosPublic])
 
         // handle make admin
         const handleMakeAdmin = user =>{

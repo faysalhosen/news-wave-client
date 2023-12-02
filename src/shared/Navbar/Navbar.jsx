@@ -12,14 +12,14 @@ const Navbar = () => {
         logout()
 
     }
-    const [userInfo, setUserInfo] = useState();
+const [userInfo, setUserInfo] = useState(null);
     const axiosPublic = useAxiosPublic();
     useEffect(() => {
         axiosPublic.get(`/user/${user?.email}`)
             .then(data => {
                 setUserInfo(data.data)
             })
-    }, [axiosPublic, user?.email, userInfo])
+    }, [axiosPublic, user?.email])
 
     const links = <>
         <li><NavLink to='/'>Home</NavLink></li>

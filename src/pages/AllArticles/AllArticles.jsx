@@ -29,7 +29,7 @@ const AllArticles = () => {
     // }, [])
 
     const { data: approvedArticle, isLoading } = useQuery({
-        queryKey: "approvedArticle",
+        queryKey: ["approvedArticle",searchValue],
         queryFn: async () => {
             const result = await axiosPublic.get(`/articles?status=approved&searchValue=${searchValue ? searchValue : ''}`)
             // .then(res=>res.data)
@@ -43,7 +43,7 @@ const AllArticles = () => {
     return (
         <>
             <div>
-                <input type="text" placeholder="search title"  onChange={(e) => setSearchValue(e.target.value)} className="w-3/4 md:w-2/4 mx-auto   border border-slate-500 py-2 px-4 rounded" />
+                <input type="text" placeholder="search title"  onBlur={(e) => setSearchValue(e.target.value)} className="w-3/4 md:w-2/4 mx-auto   border border-slate-500 py-2 px-4 rounded" />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-2 md:p-16">
                 {approvedArticle?.map(element => <ArticleCard key={element.id} articles={element}></ArticleCard>)}

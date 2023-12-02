@@ -16,7 +16,7 @@ const Dashboard = () => {
             .then(data => {
                 setUserInfo(data.data)
             })
-    }, [axiosPublic, user, userInfo])
+    }, [axiosPublic, user])
 
     // const {data:userInfo, isLoading} = useQuery({
     //     queryKey: "userInfo",
