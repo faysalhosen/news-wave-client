@@ -34,6 +34,8 @@ const Add = () => {
         const author_email = user?.email;
         const author_img = user?.photoURL;
         const status = "pending";
+
+        console.log(import.meta.env.VITE_image)
         
         const res = await axios.post(imageAPI, imageFile, {
             headers: {

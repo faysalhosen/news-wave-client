@@ -17,6 +17,13 @@ const ManageAllArticles = () => {
             }, []);
     })
 
+    const refetchData = () => {
+        axiosPublic.get(`/posts`)
+            .then(data => {
+                setMyArticle(data.data);
+            }, []);
+    }
+
     const handleUpdate = () => {
         console.log("Update");
     }
@@ -40,7 +47,7 @@ const ManageAllArticles = () => {
                                 text: "Your file has been deleted.",
                                 icon: "success"
                             });
-
+                            refetchData();
                         }
                     })
 

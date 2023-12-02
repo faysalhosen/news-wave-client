@@ -39,7 +39,7 @@ export const routes = createBrowserRouter([
             {
                 path: "/article/:id",
                 element: <PrivateRoute><ArticleDetails></ArticleDetails></PrivateRoute>,
-                loader: ({params})=>fetch(`http://localhost:3000/post/${params.id}`)
+                loader: ({params})=>fetch(`https://news-wave-server-steel.vercel.app/post/${params.id}`)
             },
             {
                 path: "/subscriptions",
@@ -92,7 +92,7 @@ export const routes = createBrowserRouter([
             {
                 path: "/dashboard/update/:id",
                 element: <Update></Update>,
-                loader: ({params})=>fetch(`http://localhost:3000/post/${params.id}`)
+                loader: ({params})=>fetch(`https://news-wave-server-steel.vercel.app/post/${params.id}`)
             },
             {
                 path: "/dashboard/manageall",

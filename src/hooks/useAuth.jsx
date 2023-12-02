@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
-import { GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
+import { GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 // import axios from "axios";
-import { auth } from "../firebase/firebase.config";
+import { app } from "../firebase/firebase.config";
 import useAxiosPublic from "./useAxios";
+const auth = getAuth(app)
 
 const useAuth = () => {
     const axiosPublic = useAxiosPublic();
