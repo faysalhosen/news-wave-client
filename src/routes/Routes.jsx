@@ -21,6 +21,7 @@ import AuthorRequest from "../pages/AuthorRequest/AuthorRequest";
 import AuthorApproval from "../dashboard/AuthorApproval/AuthorApproval";
 import Payment from "../pages/Payment/Payment";
 import Premium from "../pages/Premium/Premium";
+import AddPublisher from "../dashboard/AddPublisher/AddPublisher";
 
 export const routes = createBrowserRouter([
     {
@@ -88,6 +89,10 @@ export const routes = createBrowserRouter([
             {
                 path: "/dashboard/manage",
                 element: <ManageArticles></ManageArticles>,
+            },
+            {
+                path: "/dashboard/add-publisher",
+                element: <AddPublisher></AddPublisher>,
             },
             {
                 path: "/dashboard/update/:id",

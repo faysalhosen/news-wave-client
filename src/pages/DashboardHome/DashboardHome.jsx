@@ -2,6 +2,7 @@ import { useState } from "react";
 import useAuth from "../../hooks/useAuth";
 import useAxiosPublic from "../../hooks/useAxios";
 import { useEffect } from "react";
+import PieChart from "./PieChart";
 
 
 const DashboardHome = () => {
@@ -28,8 +29,12 @@ const DashboardHome = () => {
             </div>
             <div>
                 <h1 className="text-4xl font-bold">Your Posted Articles: {myArticle?.length}</h1>
-
             </div>
+
+            <div className="w-full mt-2">
+                <PieChart />
+            </div>
+
         </div>
     );
 };
