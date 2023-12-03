@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 const Headlines = () => {
     const [headline, setHeadline] = useState([]);
     useEffect(()=>{
-        fetch("https://news-wave-server-steel.vercel.app/posts")
+        fetch("http://localhost:3000/posts")
         .then(res=>res.json())
         .then(data=>{
             setHeadline(data);

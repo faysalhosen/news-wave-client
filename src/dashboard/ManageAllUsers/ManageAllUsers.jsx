@@ -2,18 +2,31 @@ import { useEffect } from "react";
 import { useState } from "react";
 import useAxiosPublic from "../../hooks/useAxios";
 import Swal from "sweetalert2";
+import { useQuery } from "@tanstack/react-query";
 
 
 const ManageAllUsers = () => {
-    const [users, setUsers] = useState();
+    //const [users, setUsers] = useState([]);
+    const [loading, setLoading] = useState(false)
     const axiosPublic = useAxiosPublic();
 
-    useEffect(() => {
-        axiosPublic.get("/users")
-            .then(data => {
-                setUsers(data.data)
-            })
-        }, [axiosPublic])
+    const { isLoading, isError, data: users = [], error, refetch } = useQuery( {
+        queryKey:["users"],
+        queryFn: async () => {
+            const res = await axiosPublic.get("/users")
+            return res.data;
+        },
+    });
+
+
+    // useEffect(() => {
+    //     setLoading(true)
+    //     axiosPublic.get("/users")
+    //         .then(data => {
+    //             setUsers(data.data)
+    //             setLoading(false)
+    //         })
+    //     }, [axiosPublic])
 
         // handle make admin
         const handleMakeAdmin = user =>{
@@ -38,6 +51,8 @@ const ManageAllUsers = () => {
                                 showConfirmButton: false,
                                 timer: 1500
                               });
+                              refetch()
+                              
                         }
                     })
                   

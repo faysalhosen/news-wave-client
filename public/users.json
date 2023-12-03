@@ -1,60 +1,74 @@
-
-
 [
-    {
-      "_id": "6565b409b73956df4cf5b893",
+  {
       "name": "News Wave Admin",
       "email": "admin@newswave.net",
       "role": "admin",
       "account_type": "premium"
-    },
-    {
-      "_id": "6565b84cc9daf7a334250e2d",
+  },
+  {
       "name": "Rezoan Ahmed",
       "email": "rezoan.ju.iit@gmail.com",
       "role": "admin",
       "account_type": "premium"
-    },
-    {
-      "_id": "6565e49aafabf11c31af8f7e",
-      "name": "Sadia Islam (Mow)",
-      "email": "clippise@gmail.com",
-      "role": "author",
-      "account_type": "premium"
-    },
-    {
-      "_id": "656645eaffb9a11bb4182258",
-      "name": "Admin",
-      "email": "admin@newswave.com",
-      "role": "user",
-      "account_type": "free"
-    },
-    {
-      "_id": "656717008a532da37f1b3298",
-      "name": "Jerry Mouse",
-      "email": "jerry@gmail.com",
-      "role": "pending author",
-      "account_type": "free"
-    },
-    {
-      "_id": "656718b58a532da37f1b3299",
-      "name": "Christopher Smith",
-      "email": "christopher@email.com",
-      "role": "author",
-      "account_type": "free"
-    },
-    {
-      "_id": "656718fc8a532da37f1b329a",
+  },
+  {
       "name": "Tom McQueen",
       "email": "tom@email.com",
       "role": "user",
       "account_type": "free"
-    },
-    {
-      "_id": "6569ab730e2c463179ae8d7e",
+  },
+  {
       "name": "Faysal Hosen",
       "email": "faysalhosen7025@gmail.com",
+      "role": "admin",
+      "account_type": "premium"
+  },
+  {
+      "name": "Jerry Mouse",
+      "email": "jerry@gmail.com",
+      "role": "pending author",
+      "account_type": "free"
+  },
+  {
+      "name": "Sadia Islam (Mow)",
+      "email": "clippise@gmail.com",
+      "role": "admin",
+      "account_type": "premium"
+  },
+  {
+      "name": "Admin",
+      "email": "admin@newswave.com",
+      "role": "admin",
+      "account_type": "free"
+  },
+  {
+      "name": "Christopher Smith",
+      "email": "christopher@email.com",
+      "role": "author",
+      "account_type": "free"
+  },
+  {
+      "name": "Faysal",
+      "email": "faysal7025@gmail.com",
+      "role": "admin",
+      "account_type": "premium"
+  },
+  {
+      "name": "faysal",
+      "email": "a@gmail.com",
+      "role": "admin",
+      "account_type": "free"
+  },
+  {
+      "name": "Ahmed",
+      "email": "Ahmed@gmail.com",
       "role": "user",
       "account_type": "free"
-    }
-  ]
+  },
+  {
+      "name": "mamun",
+      "email": "mamun@gmail.com",
+      "role": "user",
+      "account_type": "premium"
+  }
+]

@@ -21,7 +21,7 @@ const Dashboard = () => {
     // const {data:userInfo, isLoading} = useQuery({
     //     queryKey: "userInfo",
     //     queryFn: async()=>{
-    //         const result = await axiosPublic.get(`https://news-wave-server-steel.vercel.app/user/${user.email}`);
+    //         const result = await axiosPublic.get(`http://localhost:3000/user/${user.email}`);
     //         return result?.data;
     //     }
     // })
