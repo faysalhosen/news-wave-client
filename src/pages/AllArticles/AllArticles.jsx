@@ -11,13 +11,13 @@ import { useEffect } from "react";
 
 const AllArticles = () => {
     const [article, setArticle] = useState([]);
-    // useEffect(()=>{
-    //     fetch("/posts.json")
-    //     .then(res=>res.json())
-    //     .then(data=>{
-    //         setArticle(data);
-    //     })
-    // },[])
+    useEffect(()=>{
+        fetch("/posts.json")
+        .then(res=>res.json())
+        .then(data=>{
+            setArticle(data);
+        })
+    },[])
     const [searchValue, setSearchValue] = useState('');
     console.log(searchValue)
 
