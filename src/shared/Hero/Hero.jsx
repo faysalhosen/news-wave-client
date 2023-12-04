@@ -1,4 +1,4 @@
-import { TypeAnimation } from "react-type-animation";
+// import { TypeAnimation } from "react-type-animation";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useRef, useState } from 'react';
 
@@ -11,7 +11,7 @@ import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import useAxiosPublic from "../../hooks/useAxios";
 import { useEffect } from "react";
-import CountUp from "react-countup";
+// import CountUp from "react-countup";
 
 const Hero = () => {
     const progressCircle = useRef(null);
@@ -21,14 +21,14 @@ const Hero = () => {
         progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
     };
     const axiosPublic = useAxiosPublic();
-    const [article, setArticle] = useState();
+    const [article, setArticle] = useState([]);
+  
     useEffect(() => {
         axiosPublic.get("/posts")
             .then(data => {
-
                 setArticle(data.data)
             })
-    }, [])
+    }, [axiosPublic])
 
     return (
         <div className="">

@@ -32,5 +32,5 @@
 * Password Authentication
 
 # Admin Panel Login Details
-* E-mail: admin@newswave.net
-* Password: Rezoan@01
+* E-mail: admin1@gmail.com
+* Password: Faysal1@

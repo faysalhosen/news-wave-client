@@ -18,18 +18,6 @@ const Dashboard = () => {
             })
     }, [axiosPublic, user])
 
-    // const {data:userInfo, isLoading} = useQuery({
-    //     queryKey: "userInfo",
-    //     queryFn: async()=>{
-    //         const result = await axiosPublic.get(`http://localhost:3000/user/${user.email}`);
-    //         return result?.data;
-    //     }
-    // })
-
-    // if(isLoading){
-    //     return <LoadingAnimation></LoadingAnimation>
-    // }
-
     return (
         <div className="flex">
             <Helmet>

@@ -5,6 +5,7 @@ import Hero from "../../shared/Hero/Hero";
 import Features from "../Features/Features";
 import Subscriptions from "../Subscriptions/Subscriptions";
 import AllArticlesHome from "../AllArticles/AllArticlesHome";
+import Publishers from "../../shared/publishers/Publishers";
 
 
 const Homepage = () => {
@@ -13,15 +14,19 @@ const Homepage = () => {
             <Helmet>
                 <title>News Wave | Home</title>
             </Helmet>
-            
+
             <Hero></Hero>
             <Headlines></Headlines>
             <AllArticlesHome></AllArticlesHome>
             <Subscriptions></Subscriptions>
+
+
+            <Publishers />
+
             <Features></Features>
-            
+
             <Footer></Footer>
-            
+
         </div>
     );
 };

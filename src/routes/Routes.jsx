@@ -40,7 +40,7 @@ export const routes = createBrowserRouter([
             {
                 path: "/article/:id",
                 element: <PrivateRoute><ArticleDetails></ArticleDetails></PrivateRoute>,
-                loader: ({params})=>fetch(`http://localhost:3000/post/${params.id}`)
+                loader: ({params})=>fetch(`${import.meta.env.VITE_BASE_API_URL}/post/${params.id}`)
             },
             {
                 path: "/subscriptions",
@@ -97,7 +97,7 @@ export const routes = createBrowserRouter([
             {
                 path: "/dashboard/update/:id",
                 element: <Update></Update>,
-                loader: ({params})=>fetch(`http://localhost:3000/post/${params.id}`)
+                loader: ({params})=>fetch(`${import.meta.env.VITE_BASE_API_URL}/post/${params.id}`)
             },
             {
                 path: "/dashboard/manageall",
