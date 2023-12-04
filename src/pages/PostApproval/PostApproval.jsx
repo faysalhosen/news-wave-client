@@ -7,11 +7,19 @@ const PostApproval = () => {
     const axiosPublic = useAxiosPublic();
     const [article, setArticle] = useState([]);
     useEffect(() => {
-        axiosPublic.get("/articles?status=pending")
+        axiosPublic.get("/pending-articles")
             .then(data => {
                 setArticle(data.data);
             })
     })
+
+    const refetchData = () => {
+        axiosPublic.get(`/pending-articles`)
+            .then(data => {
+                setArticle(data.data);
+            }, []);
+    }
+
     const handleApprove = id => {
         Swal.fire({
             title: "Are you sure?",
@@ -32,6 +40,7 @@ const PostApproval = () => {
                                 text: "The article has been approved.",
                                 icon: "success"
                             });
+                            refetchData();
                         }
                     })
             }
@@ -78,6 +87,7 @@ const PostApproval = () => {
                                         Index
                                     </th>
                                     <th>Title</th>
+                                    <th>Status</th>
                                     <th>Category</th>
                                     <th>Approve</th>
 
@@ -108,11 +118,14 @@ const PostApproval = () => {
                                                 </div>
                                             </td>
                                             <td className="capitalize">
+                                                {element.status}
+                                            </td>
+                                            <td className="capitalize">
                                                 {element.category}
                                             </td>
                                             <th className="flex gap-2">
-                                                <button onClick={() => handleApprove(element._id)} className="btn btn-success"><Check></Check></button>
-                                                <button onClick={()=> handleReject(element._id)} className="btn btn-error"><Close></Close></button>
+                                                <button onClick={() => handleApprove(element._id)} className="btn text-white btn-success"><Check></Check></button>
+                                                <button onClick={() => handleReject(element._id)} className="btn text-white btn-error"><Close></Close></button>
                                             </th>
                                         </tr>
                                     </>)

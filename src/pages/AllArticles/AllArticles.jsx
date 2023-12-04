@@ -23,8 +23,8 @@ const AllArticles = () => {
 
     return (
         <>
-            <div>
-                <input type="text" placeholder="Search Title" onChange={(e) => setSearchValue(e.target.value)} className="w-3/4 md:w-2/4 ml-16 border border-slate-800 py-2 px-4 rounded" />
+            <div className="flex items-center justify-center">
+                <input type="text" placeholder="Search by Title..." onChange={(e) => setSearchValue(e.target.value)} className="w-3/4 md:w-2/4 ml-16 border border-slate-800 py-2 px-4 rounded" />
             </div>
             {
                 isLoading ? <LoadingAnimation /> : <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-2 md:p-16">

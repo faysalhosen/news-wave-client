@@ -1,5 +1,4 @@
-import { useEffect } from "react";
-import { useState } from "react";
+
 import useAxiosPublic from "../../hooks/useAxios";
 import Swal from "sweetalert2";
 import { useQuery } from "@tanstack/react-query";
@@ -7,7 +6,7 @@ import { useQuery } from "@tanstack/react-query";
 
 const ManageAllUsers = () => {
     //const [users, setUsers] = useState([]);
-    const [loading, setLoading] = useState(false)
+    // const [loading, setLoading] = useState(false)
     const axiosPublic = useAxiosPublic();
 
     const { isLoading, isError, data: users = [], error, refetch } = useQuery( {

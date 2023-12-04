@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import useAxiosPublic from "../../hooks/useAxios";
 import useAuth from "../../hooks/useAuth";
-import { Delete, Update } from "@mui/icons-material";
+import { Delete} from "@mui/icons-material";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
@@ -64,6 +64,7 @@ const ManageArticles = () => {
                                         Index
                                     </th>
                                     <th>Title</th>
+                                    <th>Status</th>
                                     <th>Category</th>
                                     <th>Actions</th>
 
@@ -93,13 +94,16 @@ const ManageArticles = () => {
                                                 </div>
                                             </td>
                                             <td className="capitalize">
+                                                {element.status}
+                                            </td>
+                                            <td className="capitalize">
                                                 {element.category}
                                             </td>
                                             <th className="flex gap-2">
-                                                <Link to={`/dashboard/update/${element._id}`} className="btn rounded-full btn-success" onClick={() => handleUpdate()}>
-                                                    <Update></Update>
+                                                <Link to={`/dashboard/update/${element._id}`} className="btn text-white rounded-full btn-success" onClick={() => handleUpdate()}>
+                                                   Edit
                                                 </Link>
-                                                <button className="btn rounded-full btn-error" onClick={() => handleDelete(element._id)}>
+                                                <button className="btn text-white rounded-full btn-error" onClick={() => handleDelete(element._id)}>
                                                     <Delete></Delete>
                                                 </button>
                                             </th>
