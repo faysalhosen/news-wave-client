@@ -17,15 +17,11 @@ const Homepage = () => {
 
             <Hero></Hero>
             <Headlines></Headlines>
+            <Publishers></Publishers>
             <AllArticlesHome></AllArticlesHome>
             <Subscriptions></Subscriptions>
-
-
-            <Publishers />
-
             <Features></Features>
-
-            <Footer></Footer>
+             <Footer></Footer>
 
         </div>
     );

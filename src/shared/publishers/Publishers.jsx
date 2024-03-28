@@ -15,15 +15,15 @@ const Publishers = () => {
     }, [axiosPublic])
 
     return (
-        <div>
-            <h2 className="text-3xl text-center">All Publishers</h2>
+        <div className="justify-center items-center">
+            <h2 className="text-5xl m-16 text-center">All Publishers</h2>
 
-            <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-10 gap-4">
+            <div className=" m-12 flex-col justify-center items-center border-slate-200 grid grid-cols-3 md:grid-cols-5 lg:grid-cols-10 gap-4">
                 {
                     publisher.map((p) => (
-                        <div key={p._id} className="felx flex-col gap-1 items-center">
-                            <img src={p?.image} alt="publisher image" />
-                            <h3>{p?.name}</h3>
+                        <div key={p._id} className="flex flex-col gap-1 justify-center items-center">
+                            <img className="items-center rounded-xl h-20" src={p?.image} alt="publisher image" />
+                            
                         </div>
                     ))
                 }

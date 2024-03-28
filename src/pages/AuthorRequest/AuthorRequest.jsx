@@ -12,7 +12,7 @@ const AuthorRequest = () => {
             .then(data => {
                 setUser(data.data)
             })
-    }, [axiosPublic, firebaseUser, user])
+    }, [axiosPublic, firebaseUser])
 
     const handleRequest = id =>{
         // console.log(`author request for ${id}`);

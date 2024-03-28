@@ -5,6 +5,7 @@ import ArticleCard from "../AllArticles/ArticleCard";
 
 const Premium = () => {
     const [premium, setPremium] = useState();
+
     const axiosPublic = useAxiosPublic();
     useEffect(() => {
         axiosPublic.get("/posts")

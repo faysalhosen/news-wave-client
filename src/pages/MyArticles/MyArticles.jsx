@@ -8,12 +8,15 @@ const MyArticles = () => {
     const {user} =  useAuth();
     const axiosPublic = useAxiosPublic();
     const [myArticle, setMyArticle] = useState([]);
-    useEffect(()=>{
+  
+    useEffect(() => {
         axiosPublic.get(`/myarticles?email=${user?.email}`)
-        .then(data=>{
-            setMyArticle(data.data);
-        },[]);
-    })
+            .then(data => {
+                setMyArticle(data.data);
+            });
+    }, [user, axiosPublic]);
+
+
     return (
         <div>
             <h1 className="text-4xl font-bold text-center p-2">Welcome {user.displayName}, You've published {myArticle.length} article(s)</h1>
