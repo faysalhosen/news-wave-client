@@ -6,6 +6,7 @@ import Features from "../Features/Features";
 import Subscriptions from "../Subscriptions/Subscriptions";
 import AllArticlesHome from "../AllArticles/AllArticlesHome";
 import Publishers from "../../shared/publishers/Publishers";
+import GetOurUpdates from "../GetOurUpdates/GetOurUpdates";
 
 
 const Homepage = () => {
@@ -21,6 +22,7 @@ const Homepage = () => {
             <AllArticlesHome></AllArticlesHome>
             <Subscriptions></Subscriptions>
             <Features></Features>
+            <GetOurUpdates></GetOurUpdates>
              <Footer></Footer>
 
         </div>
