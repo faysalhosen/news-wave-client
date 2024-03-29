@@ -11,7 +11,7 @@ const Headlines = () => {
         })
     },[])
     return (
-        <div className="flex pt-5 px-4">
+        <div className="flex pt-5 px-10">
             <p className="p-2 bg-red-600 text-white font-bold">Headlines</p>
             <Marquee className=" border border-red-600">
                 {

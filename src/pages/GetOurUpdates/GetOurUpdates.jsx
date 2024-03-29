@@ -12,7 +12,7 @@ const GetOurUpdates = () => {
                     <p className="pt-2 pb-8 text-xl antialiased text-center text-gray-100">Find out about events and other news</p>
                     <div className="flex flex-row">
                         <input type="text" placeholder="your@email.com" className="w-3/5 p-3 rounded-l-lg sm:w-2/3 text-slate-800" />
-                        <button type="button" className="w-2/5 p-3 font-semibold rounded-r-lg sm:w-1/3 bg-[#fca311] hover:bg-[#ff8800] text-gray-100">Subscribe</button>
+                        <button type="button" className="w-2/5 p-3 font-semibold rounded-r-lg sm:w-1/3 bg-primary text-gray-100">Subscribe</button>
                     </div>
                 </div>
             </div>

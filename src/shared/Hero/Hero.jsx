@@ -22,7 +22,7 @@ const Hero = () => {
     };
     const axiosPublic = useAxiosPublic();
     const [article, setArticle] = useState([]);
-  
+
     useEffect(() => {
         axiosPublic.get("/posts")
             .then(data => {
@@ -31,11 +31,8 @@ const Hero = () => {
     }, [axiosPublic])
 
     return (
-        <div className="">
-                
-
-
-            <div className="mt-4">
+        
+            <div className="mt-4 mx-10">
                 <Swiper
 
                     spaceBetween={30}
@@ -56,7 +53,7 @@ const Hero = () => {
                     {
                         article?.map(element => <SwiperSlide key={element._id}>
                             <div className="">
-                                <img src={element.photoURL} alt="" className="w-full"/>
+                                <img src={element.photoURL} alt="" className="w-full" />
                             </div>
                         </SwiperSlide>).slice(0, 6)
                     }
@@ -78,9 +75,6 @@ const Hero = () => {
 
             </div>
 
-
-
-        </div >
     );
 };
 

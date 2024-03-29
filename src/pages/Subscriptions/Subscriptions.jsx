@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 const Subscriptions = () => {
     return (
         <div>
-            <div className="w-full h-[360px] rounded">
-                <img className="w-full h-full object-cover" src="https://i.ibb.co/WDvZNNB/payment-banner-page.png" alt="payment banner" />
+            <div className=" mx-10 mt-24 h-[360px] rounded">
+                <img className="  w-full h-full object-cover" src="https://i.ibb.co/WDvZNNB/payment-banner-page.png" alt="payment banner" />
             </div>
 
             <section className="text-gray-600 body-font overflow-hidden">
