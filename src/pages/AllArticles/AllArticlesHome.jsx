@@ -36,7 +36,7 @@ const AllArticlesHome = () => {
         <>
         <h2 className="text-5xl text-center mt-24 pb-12"> Most Popular Articles</h2>
 
-          <div className=" my-30 grid grid-cols-1 md:grid-cols-2 gap-8 p-2 md:p-16">
+          <div className=" my-30 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-2 md:p-16">
                 {article?.slice(0,6).map(element => <ArticleCard key={element.id} articles={element}></ArticleCard>)}
             </div >
             <div className="  flex justify-center items-center">

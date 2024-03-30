@@ -1,6 +1,6 @@
 import { Card, CardActions, CardContent, CardMedia, Typography } from "@mui/material";
 import { NavLink } from "react-router-dom";
-import VisibilityIcon from '@mui/icons-material/Visibility';
+
 import { VisibilitySharp } from "@mui/icons-material";
 
 

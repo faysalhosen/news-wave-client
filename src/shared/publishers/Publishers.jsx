@@ -15,10 +15,11 @@ const Publishers = () => {
     }, [axiosPublic])
 
     return (
-        <div className="justify-center items-center">
+        <div className=" justify-center items-center">
             <h2 className="text-5xl my-24 text-center">All Publishers</h2>
 
-            <div className=" mx-10 flex-col justify-center items-center border-slate-200 grid grid-cols-3 md:grid-cols-5 lg:grid-cols-10 gap-4">
+           <div>
+             <div className=" mx-10  grid grid-cols-3 md:grid-cols-5 lg:grid-cols-10 gap-3">
                 {
                     publisher.map((p) => (
                         <div key={p._id} className="flex flex-col gap-1 justify-center items-center">
@@ -28,6 +29,7 @@ const Publishers = () => {
                     ))
                 }
             </div>
+           </div>
         </div>
     );
 };

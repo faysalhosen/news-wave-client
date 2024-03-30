@@ -34,7 +34,7 @@ const [userInfo, setUserInfo] = useState(null);
     </>
 
     return (
-        <div className='bg-white mb-24 mx-10 '>
+        <div className='bg-white mb-24 x-10 '>
             <div className="navbar bg-base-100 fixed z-10 top-0 shadow-xl">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -58,7 +58,7 @@ const [userInfo, setUserInfo] = useState(null);
                         }
                     </ul>
                 </div>
-                <div className="navbar-end mr-16">
+                <div className="navbar-end mr-10">
                     {
                         user ?
                             <div className="dropdown dropdown-end">

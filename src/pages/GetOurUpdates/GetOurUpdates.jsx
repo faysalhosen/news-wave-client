@@ -3,9 +3,9 @@
 
 const GetOurUpdates = () => {
     return (
-        <div className='my-16 lg:my-32'>
+        <div className='my-16 mx-10 lg:my-32'>
 
-            <div className="w-full bg-slate-900 bg-[url(https://i.ibb.co/ssBS53R/breaking-news-interface-screen-design-vector-34408869.jpg)] bg-center bg-blend-multiply bg-cover">
+            <div className="w-full bg-slate-900 bg-[url(https://i.ibb.co/qrvbS1m/bg.jpg)] bg-center bg-blend-multiply bg-cover">
 
                 <div className="container flex flex-col flex-wrap content-center justify-center p-4 py-20 mx-auto md:p-10">
                     <h1 className="text-5xl antialiased font-semibold leadi text-center text-gray-100">Get Our Updates</h1>
