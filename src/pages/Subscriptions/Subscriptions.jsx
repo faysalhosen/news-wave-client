@@ -4,12 +4,18 @@ import { Link } from "react-router-dom";
 const Subscriptions = () => {
     return (
         <div>
-            <div className=" mx-10 mt-24 h-[360px] rounded">
-                <img className="  w-full h-full object-cover" src="https://i.ibb.co/WDvZNNB/payment-banner-page.png" alt="payment banner" />
-            </div>
+           <div className=" mx-10 mt-28 bg-gray-500 bg-[url(https://i.ibb.co/6gsBDFT/credit-card.jpg)] bg-bottom bg-blend-multiply bg-cover mb-5">
+
+<div className="container flex flex-col flex-wrap content-center justify-center p-4 mx-auto">
+    <div className='p-4 py-10 md:py-16 lg:py-20 text-white flex flex-col gap-2 items-center'>
+        <h3 className='font-semibold text-3xl md:text-4xl uppercase text-center'>Best Your Choice</h3>
+        <p className='mt-1 text-center'>Select your subscription, empower trustworthy journalism, and indulge in an enhanced reading journey.</p>
+    </div>
+</div>
+</div>
 
             <section className="text-gray-600 body-font overflow-hidden">
-                <div className="container px-5 py-24 mx-auto">
+                <div className="container px-5 py-12 mx-auto">
                     <div className="flex flex-col text-center w-full mb-10">
                         <h1 className="sm:text-4xl text-3xl mb-2 text-gray-900">Explore Our Monthly Subscriptions</h1>
 
