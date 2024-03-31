@@ -60,12 +60,12 @@ export const routes = createBrowserRouter([
             },
             {
                 path: "/myarticles",
-                element: <MyArticles></MyArticles>,
+                element:  <PrivateRoute><MyArticles></MyArticles></PrivateRoute>,
 
             },
             {
                 path: "/authorrequest",
-                element:<AuthorRequest></AuthorRequest>
+                element: <PrivateRoute><AuthorRequest></AuthorRequest></PrivateRoute>
             },
             {
                 path: "/payment",

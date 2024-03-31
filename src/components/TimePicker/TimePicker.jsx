@@ -11,8 +11,8 @@ const TimePicker = () => {
 
     return (
         
-          <div className=' mb-3'> 
-            <p className=' font-medium '>Current Date : <span className=' font-normal'>{moment(currentDate).format("D MMM YYYY,")}   {time.toLocaleTimeString()}</span> 
+          <div className=' mb-4'> 
+            <p className="flex gap-2"><p className='font-bold text-blue '> Current Date:</p> <span className=' font-normal'>{moment(currentDate).format("D MMM YYYY,")}   {time.toLocaleTimeString()}</span> 
             </p>   
           </div>
        

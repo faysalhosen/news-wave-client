@@ -26,15 +26,14 @@ const [userInfo, setUserInfo] = useState(null);
     }, [axiosPublic, user?.email])
 
     const links = <>
-        <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to='/all' >All Articles</NavLink></li>
-       <li> <NavLink to='/all'>All Articles</NavLink> </li>
-        <li><NavLink to='/subscriptions' >Subscription</NavLink></li>
-        <li><NavLink to='/add' className={user ? "" : "hidden"}  >Add Articles</NavLink></li>
-        <li><NavLink to='/myarticles' className={user ? "" : "hidden"}>My Articles</NavLink></li>
-        <li><NavLink to='/authorrequest' className={user ? "" : "hidden"} >Become An Author</NavLink></li>
-        <li><NavLink to='/dashboard' className={user ? "" : "hidden"} >Dashboard</NavLink></li>
-        <li><NavLink to='/premium' className={user ? "" : "hidden"}>Premium Articles</NavLink></li>
+        <li><NavLink to='/' className={({ isActive, isPending }) =>  isPending ? "pending" : isActive ? "underline font-bold text-blue " : "" }>Home</NavLink></li>
+       <li> <NavLink to='/all' className={({ isActive, isPending }) =>  isPending ? "pending" : isActive ? "underline font-bold text-blue" : "" }>All Articles</NavLink> </li>
+        <li  className={user ? "" : "hidden"}><NavLink to='/subscriptions'  className={({ isActive, isPending }) =>  isPending ? "pending" : isActive ? "underline font-bold text-blue" : "" }>Subscription</NavLink></li>
+        <li  className={user ? "" : "hidden"} ><NavLink to='/add'  className={({ isActive, isPending }) =>  isPending ? "pending" : isActive ? "underline font-bold text-blue" : "" } >Add Articles</NavLink></li>
+        <li  className={user ? "" : "hidden"}><NavLink to='/myarticles'className={({ isActive, isPending }) =>  isPending ? "pending" : isActive ? "underline font-bold text-blue" : "" } >My Articles</NavLink></li>
+        <li  className={user ? "" : "hidden"}><NavLink to='/authorrequest' className={({ isActive, isPending }) =>  isPending ? "pending" : isActive ? "underline font-bold text-blue" : "" } >Become An Author</NavLink></li>
+        <li  className={user ? "" : "hidden"}><NavLink to='/dashboard' className={({ isActive, isPending }) =>  isPending ? "pending" : isActive ? "underline font-bold text-blue" : "" } >Dashboard</NavLink></li>
+        <li  className={user ? "" : "hidden"}><NavLink to='/premium' className={({ isActive, isPending }) =>  isPending ? "pending" : isActive ? "underline font-bold text-blue" : "" }>Premium Articles</NavLink></li>
 
     </>
 
@@ -48,7 +47,7 @@ const [userInfo, setUserInfo] = useState(null);
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </label>
-                        <ul tabIndex={0} className="  menu  py-4 dropdown-content ml-12 z-[1]  bg-base-100 rounded-box w-32">
+                        <ul tabIndex={0} className=" text-center py-4 dropdown-content ml-12 z-[1]  bg-base-100 rounded-box w-32">
                             {   	
                                 links
                             }
@@ -59,7 +58,7 @@ const [userInfo, setUserInfo] = useState(null);
                     </NavLink>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className=" menu  pl-32 menu-horizontal px-1">
+                    <ul className="gap-4 text-center pl-32 menu-horizontal px-1">
                         {
                             links
                         }
@@ -76,7 +75,7 @@ const [userInfo, setUserInfo] = useState(null);
                                         <img alt={user.displayName} src={user.photoURL} />
                                     </div>
                                 </div>
-                                <ul className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-64">
+                                <ul className=" menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-64">
                                     <li>
                                         <a className="justify-between font-bold">
                                             {user.displayName}
