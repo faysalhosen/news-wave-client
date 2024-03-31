@@ -40,7 +40,7 @@ const AllArticlesHome = () => {
                 {article?.slice(0,6).map(element => <ArticleCard key={element.id} articles={element}></ArticleCard>)}
             </div >
             <div className="  flex justify-center items-center">
-            <Link to='/all' className="px-4 py-2 bg-gunblack btn text-white hover:bg-opacity-70 hover:text-black">See All Articles</Link>
+            <Link to='/all' className="px-4 py-2 bg-slate-700 rounded-lg text-white a hover:bg-opacity-70">See All Articles</Link>
             </div>
         </>
     );

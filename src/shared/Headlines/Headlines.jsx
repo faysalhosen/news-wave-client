@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Marquee from "react-fast-marquee";
 
+
 const Headlines = () => {
     const [headline, setHeadline] = useState([]);
     useEffect(()=>{
@@ -12,6 +13,7 @@ const Headlines = () => {
     },[])
     return (
         <div className="flex pt-5 px-10">
+           
             <p className="p-2 bg-red-600 text-white font-bold">Headlines</p>
             <Marquee className=" border border-red-600">
                 {

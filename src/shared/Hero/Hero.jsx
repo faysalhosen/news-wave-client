@@ -11,6 +11,7 @@ import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import useAxiosPublic from "../../hooks/useAxios";
 import { useEffect } from "react";
+import TimePicker from '../../components/TimePicker/TimePicker';
 // import CountUp from "react-countup";
 
 const Hero = () => {
@@ -31,8 +32,10 @@ const Hero = () => {
     }, [axiosPublic])
 
     return (
-        
-            <div className="mt-4 mx-10">
+        <div>
+           
+             <div className="mt-4 mx-10">
+             <TimePicker></TimePicker>
                 <Swiper
 
                     spaceBetween={30}
@@ -75,6 +78,8 @@ const Hero = () => {
 
             </div>
 
+        </div>
+           
     );
 };
 
