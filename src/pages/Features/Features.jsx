@@ -2,14 +2,12 @@
 const Features = () => {
     return (
         <div>
+            <div className="text-center">
+                <h2 className="text-4xl font-medium  text-center">Feautures</h2>
+                <div className="w-24 text-center h-1 rounded-full bg-blue inline-flex"></div>
+            </div>
             <section className="text-gray-600 body-font">
                 <div className="container px-5 py-10 mx-auto">
-                    <div className="text-center mb-10">
-                        
-                        <div className="flex mt-6 justify-center">
-                            <div className="w-16 h-1 rounded-full bg-blue inline-flex"></div>
-                        </div>
-                    </div>
                     <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
                         <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
                             <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-blue mb-5 flex-shrink-0">
@@ -63,7 +61,6 @@ const Features = () => {
                             </div>
                         </div>
                     </div>
-                    
                 </div>
             </section>
         </div>

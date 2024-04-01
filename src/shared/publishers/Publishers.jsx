@@ -16,7 +16,10 @@ const Publishers = () => {
 
     return (
         <div className=" justify-center items-center">
-            <h2 className="text-5xl my-24 text-center">All Publishers</h2>
+            <div className="text-center mt-24">
+            <h2 className="text-5xl mb-5  text-center">All Publishers</h2>
+            <div className="w-24 text-center mb-20  h-1 rounded-full bg-blue inline-flex"></div>
+            </div>
 
            <div>
              <div className=" mx-10  grid grid-cols-3 md:grid-cols-5 lg:grid-cols-10 gap-3">

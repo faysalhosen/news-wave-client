@@ -53,12 +53,12 @@ const [userInfo, setUserInfo] = useState(null);
                             }
                         </ul>
                     </div>
-                    <NavLink className="pl-4">
+                    <NavLink className="pl-4 ">
                         <img src="https://i.ibb.co/BswPp3Q/Untitled-design.png" alt="Logo" className='h-16 hidden md:block' />
                     </NavLink>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="gap-4 text-center pl-32 menu-horizontal px-1">
+                    <ul className="gap-3 text-center pl-32 menu-horizontal px-1">
                         {
                             links
                         }

@@ -34,7 +34,11 @@ const AllArticlesHome = () => {
     }
     return (
         <>
-        <h2 className="text-5xl text-center mt-24 pb-12"> Most Popular Articles</h2>
+        <div className="text-center pb-8">
+        <h2 className="text-5xl text-center mt-24 pb-5"> Most Popular Articles</h2>
+        <div className="w-24 text-center h-1 rounded-full  bg-blue inline-flex"></div>
+        </div>
+        
 
           <div className=" my-30 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-2 md:p-16">
                 {article?.slice(0,6).map(element => <ArticleCard key={element.id} articles={element}></ArticleCard>)}

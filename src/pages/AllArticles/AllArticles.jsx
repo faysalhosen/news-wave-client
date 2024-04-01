@@ -24,11 +24,13 @@ const AllArticles = () => {
 
     return (
         <>
-        <h2 className="text-center text-4xl font-medium mt-10 mb-12 "> All Article</h2>
-        
-            <div className="flex relative  lg:ml-64 ">
+        <div className="text-center mb-12 ">
+        <h2 className="text-center text-3xl font-medium mt-10 lg:ml-20"> All Article</h2>
+        <div className="w-24 text-center lg:ml-20 h-1 rounded-full bg-blue inline-flex"></div>
+        </div>
+            <div className="flex relative  lg:ml-56 ">
             <FaSearch className=" absolute ml-20 mt-4"></FaSearch>
-                <input type="text" placeholder="  Search by Title..." onChange={(e) => setSearchValue(e.target.value)} className=" w-full lg:w-3/4   mx-16 border border-slate-800 py-2 pl-8 px-4 rounded"  /> 
+                <input type="text" placeholder="  Search by Title..." onChange={(e) => setSearchValue(e.target.value)} className=" w-full lg:w-3/4  mx-16 border-2 border-blue py-2 pl-8 px-4 rounded"  /> 
             </div>
             {
                 isLoading ? <LoadingAnimation /> : <div className="grid grid-cols-1 md:grid-cols-2  gap-8 p-2 md:p-16">

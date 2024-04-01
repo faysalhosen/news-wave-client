@@ -32,7 +32,7 @@ const AuthorRequest = () => {
 
     return (
         <div className="flex flex-col gap-5 justify-center items-center mt-24 h-[50vh]">
-            <h1 className="md:text-4xl font-bold">After the admin approval, You can post your articles</h1>
+            <h1 className=" text-2xl md:text-4xl font-medium mt-20">After the admin approval, You can post your articles</h1>
             <div className="divider p-4 m-4">Your Info</div>
             <div>
                 <p>ID: {user?._id?.slice(0,4)}</p>

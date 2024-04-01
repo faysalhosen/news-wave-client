@@ -129,7 +129,10 @@ const Add = () => {
             <Helmet>
                 <title>News Wave | Add Articles</title>
             </Helmet>
-            <h1 className="text-center text-4xl font-bold p-5">Add Articles</h1>
+            <div className="text-center mb-12">
+            <h1 className="text-center text-4xl font-bold pt-5">Add Articles</h1>
+            <div className="w-24 text-center h-1 rounded-full bg-blue inline-flex"></div>
+            </div>
             <form onSubmit={handleSubmit(addArticle)} className="max-w-lg mx-auto space-y-2">
                 <div className="flex justify-between">
                     <TextField name="title" id="outlined-basic" label="Article Title" variant="outlined" {...register("title")} />
