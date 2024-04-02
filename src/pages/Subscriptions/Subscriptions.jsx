@@ -56,7 +56,7 @@ const Subscriptions = () => {
                             </div>
                         </div>
                         <div className="p-4 xl:w-1/4 md:w-1/2 w-full">
-                            <div className="h-full p-6 rounded-lg border-2 border-gunblack flex flex-col relative overflow-hidden">
+                            <div className="h-full p-6 rounded-lg border-2 border-blue flex flex-col relative overflow-hidden">
                                 <span className="bg-gunblack text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">POPULAR</span>
                                 <h2 className="text-sm tracking-widest title-font mb-1 font-medium">PRO</h2>
                                 <h1 className="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
@@ -150,7 +150,7 @@ const Subscriptions = () => {
                             </div>
                         </div>
                         <div className="p-4 xl:w-1/4 md:w-1/2 w-full">
-                            <div className="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
+                            <div className="h-full p-6 rounded-lg border-2 border-blue flex flex-col relative overflow-hidden">
                                 <h2 className="text-sm tracking-widest title-font mb-1 font-medium">ENTERPRISE</h2>
                                 <h1 className="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
                                     <span>$35</span>

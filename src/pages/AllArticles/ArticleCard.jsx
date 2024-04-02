@@ -20,16 +20,16 @@ const ArticleCard = ({ articles }) => {
 
     // </div>
     <>
-      <Card sx={{}}>
+      <Card sx={{height: 400}} className="border-2 border-slate-300 h-full">
         <CardMedia
-          sx={{ height: 400 }}
+          sx={{height: 210 }}
           image={photoURL}
           title="green iguana"
         />
         <CardContent>
-          <Typography sx={{ fontFamily: "Quattrocento" }} gutterBottom variant="h5" component="div">
-            <div className="flex justify-between gap-1">
-              <div className="max-w-xl">{title}</div>
+          <Typography  sx={{ fontFamily: "Quattrocento" }} gutterBottom variant="h5" component="div">
+            <div className="flex justify-between  gap-1">
+              <div className="text-xl">{title}</div>
               <div className="text-sm text-gray-600">
                 <VisibilitySharp></VisibilitySharp> {views}
               </div>
